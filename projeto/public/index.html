@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+<head>
+	<title>API - Growdev</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<link rel="icon" type="image/png" href="images/icons/favicon.ico"/>
+<!--PAGINA LOGIN-->
+	<link rel="stylesheet" type="text/css" href="vendor/bootstrap/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="fonts/Linearicons-Free-v1.0.0/icon-font.min.css">
+	<link rel="stylesheet" type="text/css" href="vendor/animate/animate.css">
+
+	<link rel="stylesheet" type="text/css" href="vendor/css-hamburgers/hamburgers.min.css">
+	<link rel="stylesheet" type="text/css" href="vendor/animsition/css/animsition.min.css">
+	<link rel="stylesheet" type="text/css" href="vendor/select2/select2.min.css">
+
+	<link rel="stylesheet" type="text/css" href="vendor/daterangepicker/daterangepicker.css">
+	<link rel="stylesheet" type="text/css" href="css/util.css">
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <!--final pagina login-->
+
+	<link rel="stylesheet" href="./css/app.css">
+
+    </head>
+<body>
+	<!--Section logar-->
+	<section id="tela1">
+<div class="limiter">
+		<div class="container-login100">
+			<div class="wrap-login100">
+				<div class="login100-form validate-form">
+					<span class="login100-form-title p-b-34">
+						Logar na conta
+					</span>
+					
+					<div class="wrap-input100 rs1-wrap-input100 validate-input m-b-20" data-validate="Digite seu usuario">
+						<input id="usuario" class="input100" type="text" name="username" placeholder="Usuário">
+						<span class="focus-input100"></span>
+					</div>
+					<div class="wrap-input100 rs2-wrap-input100 validate-input m-b-20" data-validate="Digite sua senha">
+						<input class="input100" id="senha" type="password" name="pass" placeholder="Senha">
+						<span class="focus-input100"></span>
+					</div>
+					
+					<div class="container-login100-form-btn">
+						<button class="login100-form-btn" id="logar" >
+							Log in
+						</button>
+					</div>
+
+					<div class="w-full text-center p-t-27 p-b-239">
+						<span class="txt1">
+							Não tem uma conta? 
+						</span>
+
+						<a href="#" class="txt2" id="criar" >
+							Crie já a sua
+						</a>
+					</div>
+				</div>
+
+				<div class="login100-more" style="background-image: url('images/bg-01.jpg');"></div>
+			</div>
+		</div>
+	</div>
+	
+	
+
+	<div id="dropDownSelect1"></div>
+	</section>
+	
+	<!--Final Section logar-->
+
+	<!--Section Registrar-->
+	<section style="display: none;" id="tela2">
+		
+		<div class="limiter">
+		<div class="container-login100">
+			<div class="wrap-login100">
+				<div class="login100-form validate-form">
+					<span class="login100-form-title p-b-34">
+						Registrar nova conta
+					</span>
+					
+					<select name="" id="select">
+						<option value="selecionar">Selecione seu cargo</option>
+						<option value="Admin">Admin</option>
+						<option value="Growdever">Growdever</option>
+					</select>
+
+					<input id="nome" class="input100" type="text" name="username" placeholder="Nome">
+						<span class="focus-input100"></span>
+						
+
+					<div class="wrap-input100 rs1-wrap-input100 validate-input m-b-20" data-validate="Digite seu usuario">
+						<input id="criarUsuario" class="input100" type="text" name="username" placeholder="Usuário">
+						<span class="focus-input100"></span>
+					</div>
+					<div class="wrap-input100 rs2-wrap-input100 validate-input m-b-20" data-validate="Digite sua senha">
+						<input class="input100" type="password" name="pass" placeholder="Senha" id="criarSenha">
+						<span class="focus-input100"></span>
+					</div>
+					
+					
+					<div class="container-login100-form-btn">
+						<button class="login100-form-btn" id="registrar">
+							Registrar
+						</button>
+					</div>
+
+					<div class="w-full text-center p-t-27 p-b-239">
+						<span class="txt1">
+							Já tem uma conta? 
+						</span>
+
+						<a href="#" class="txt2" id="voltarTela" >
+							Faça login
+						</a>
+					</div>
+
+				</div>
+
+				<div class="login100-more" style="background-image: url('images/bg-01.jpg');"></div>
+			</div>
+		</div>
+	</div>
+	
+	
+
+	<div id="dropDownSelect1"></div>
+	</section>
+	<!-- Final Section Registrar-->
+
+	<section id="app" style="display: none;">
+
+		
+		  
+		  <div class="container-fluid">
+			<nav class="navbar navbar-expand-lg navbar-light bg-light">
+				<div class="container-fluid">
+				  <a class="navbar-brand" href="#">Bem-Vindo</a>
+				  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				  </button>
+				  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+					<form class="d-flex search">
+					  <button type="button" class="btn btn-outline-success" data-toggle="modal"data-target="#myModal">Add Growdever+</button>
+					</form>
+				  </div>
+				</div>
+			  </nav>
+			  <br>
+			  
+			
+			<div class="row">
+				
+			  
+		  
+			  <main class="col-md-9 ms-sm-auto col-lg-10 px-md-4">
+				<h2>Growdevers</h2>
+				<div class="table-responsive">
+					<br>
+				  <table class="table table-striped table-sm">
+		
+					<tbody id="listaGrowdevers">
+					  
+					</tbody>
+				  </table>
+				</div>
+		  
+				<canvas class="my-4 w-100" id="myChart" width="900" height="380"></canvas>
+		  
+			
+			  </main>
+			</div>
+		  </div>
+		  
+	</section>
+    
+	
+	<!-- Modal -->
+<div id="myModal" class="modal fade" role="dialog">
+	<div class="modal-dialog">
+  
+	  <!-- Modal content-->
+	  <div class="modal-content">
+		<div class="modal-header">
+		  <button type="button" class="close" data-dismiss="modal">&times;</button>
+		  <h4 class="modal-title">Insira os dados do GrowDever</h4>
+		</div>
+		<div class="modal-body">
+		  <p>Todos os campos obrigatorios*.</p>
+		  <div class="mb-3">
+			<label for="email" class="form-label">Email*</label>
+			<input type="email" class="form-control" id="registrarEmailGd" aria-describedby="emailHelp">
+		  </div>
+		  <div class="mb-3">
+			<label for="telefone" class="form-label">Telefone*</label>
+			<input type="tel" class="form-control" id="registrarTelefoneGd" aria-describedby="emailHelp">
+		  </div>
+		  <div class="mb-3">
+			<label for="programa" class="form-label">Programa*</label>
+			<select type="" class="form-control" id="registrarProgramaGd" aria-describedby="emailHelp">
+				<option value="Programa Starter 1º Edição">Programa Starter 1º Edição</option>
+				<option value="Programa Starter 3º Edição">Programa Starter 2º Edição</option>
+				<option value="Programa Starter 3º Edição">Programa Starter 3º Edição</option>
+		  </select>
+			</div>
+		  <div class="mb-3">
+			<label for="id" class="form-label">ID*</label>
+			<input type="text" class="form-control" id="registrarIdGd" aria-describedby="emailHelp">
+		  </div>
+		</div>
+		<div class="modal-footer">
+			<button type="button" class="btn btn-default btn-outline-success" data-dismiss="modal" id="addNewGrowDever">Adicionar</button>
+		  <button type="button" class="btn btn-default btn-outline-danger" data-dismiss="modal">Cancelar</button>
+		</div>
+	  </div>
+  
+	</div>
+  </div>
+
+
+	  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+
+    <script src="./bundle.js"></script>
+    <script src="../src/index.js"></script>
+
+	<script src="vendor/jquery/jquery-3.2.1.min.js"></script>
+
+	<script src="vendor/animsition/js/animsition.min.js"></script>
+
+	<script src="vendor/bootstrap/js/popper.js"></script>
+	<script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+
+	<script src="vendor/select2/select2.min.js"></script>
+	<script>
+		$(".selection-2").select2({
+			minimumResultsForSearch: 20,
+			dropdownParent: $('#dropDownSelect1')
+		});
+	</script>
+
+	<script src="vendor/daterangepicker/moment.min.js"></script>
+	<script src="vendor/daterangepicker/daterangepicker.js"></script>
+
+	<script src="vendor/countdowntime/countdowntime.js"></script>
+
+	<script src="js/main.js"></script>
+
+</body>
+</html>
